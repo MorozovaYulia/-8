@@ -1,0 +1,20 @@
+#include <iostream> 
+#include <string> 
+using namespace std; 
+#include <math.h> 
+int main() 
+{ 
+  int xa, ya, xb, yb, xc, yc, ab, ac; 
+  cout << "enter the coordinates of point A \n" ; 
+  cin >> xa >> ya; 
+  cout <<"enter the coordinates of point B \n"; 
+  cin >>  xb>> yb; 
+  cout <<"enter the coordinates of point B \n" ; 
+  cin >> xc>> yc; 
+  ab= sqrt((xb - xa)*(xb - xa) + (yb - ya)*(yb - ya)); 
+  ac= sqrt(((xc - xa)*(xc - xa) + (yc - ya)*(yc - ya))); 
+  if (ab<ac) 
+  cout << "poit B is closer \n" <<"the distance is " << ab; 
+  else 
+  cout << "poit C is closer \n" <<"the distance is " << ac; 
+} 
