@@ -4,13 +4,15 @@ using namespace std;
 int main() 
 { 
   int a,b; 
-  cout << "enter the variable value \n"; 
+  cout << "Enter the variable value \n"; 
   cin >> a >>b; 
- if (a!=b) 
-        if (a>b) 
+  if (a=b) 
+    a=0;
+    b=0;
+  else
+    if (a>b) 
       b=a; 
-        else 
-     a=b; 
-else (a=b=0) ; 
-cout << a <<b; 
+    else 
+      a=b; 
+  cout << a <<b; 
 } 
